@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - 5.5
+  - nightly
+  - hhvm
+
+install:
+  - composer install --no-interaction --prefer-dist
+  - composer dump-autoload
+
+script:
+  - phpunit
+  - sh -c "./vendor/bin/phpcs --standard=PSR2 ./src/"
