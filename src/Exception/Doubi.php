@@ -10,5 +10,8 @@ namespace Cit\Exception;
 
 class Doubi extends \Exception
 {
-
+    public function whoAreU()
+    {
+        return 'I am a doubi!';
+    }
 }
