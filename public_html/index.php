@@ -7,11 +7,12 @@
  */
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-try{
+try {
     $r = new Cit\Input\Route();
     $app = new Cit\Application($r);
     $app->run();
-}catch (Exception $e){
+    var_dump($app->router->isCli());
+} catch (Exception $e) {
     // TODO:handle all exceptions
     die('oops');
 }

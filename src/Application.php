@@ -13,7 +13,8 @@ use Cit\Input\Router;
 
 class Application
 {
-    protected $router;
+    // TODO:fix this, use di, or facade or whatever
+    public $router;
 
     public function __construct(Route $route)
     {
@@ -23,6 +24,6 @@ class Application
 
     public function run()
     {
-        
+
     }
 }
